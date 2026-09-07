@@ -1,0 +1,87 @@
+[
+  {
+    "claim_id": "CLM-1001",
+    "employee_id": "E4521",
+    "employee_grade": "Manager",
+    "trip_city": "Bengaluru",
+    "city_tier": "metro",
+    "purpose": "Client workshop - Bengaluru",
+    "submitted_on": "2026-08-20",
+    "line_items": [
+      {"category": "flight", "vendor": "IndiGo", "date": "2026-08-18", "amount": 8200, "receipt_attached": true, "receipt_id": "R-9001"},
+      {"category": "hotel", "vendor": "Taj Vivanta", "date": "2026-08-18", "amount": 6800, "nights": 1, "receipt_attached": true, "receipt_id": "R-9002"},
+      {"category": "meals", "vendor": "Various", "date": "2026-08-18", "amount": 1200, "receipt_attached": true, "receipt_id": "R-9003"},
+      {"category": "taxi", "vendor": "Uber", "date": "2026-08-18", "amount": 650, "receipt_attached": true, "receipt_id": "R-9004"}
+    ]
+  },
+  {
+    "claim_id": "CLM-1002",
+    "employee_id": "E7734",
+    "employee_grade": "Associate",
+    "trip_city": "Pune",
+    "city_tier": "metro",
+    "purpose": "Internal training - Pune",
+    "submitted_on": "2026-08-21",
+    "line_items": [
+      {"category": "flight", "vendor": "Air India", "date": "2026-08-19", "amount": 17500, "receipt_attached": true, "receipt_id": "R-9101"},
+      {"category": "hotel", "vendor": "Ibis", "date": "2026-08-19", "amount": 4200, "nights": 1, "receipt_attached": true, "receipt_id": "R-9102"},
+      {"category": "meals", "vendor": "Various", "date": "2026-08-19", "amount": 1400, "receipt_attached": true, "receipt_id": "R-9103"}
+    ]
+  },
+  {
+    "claim_id": "CLM-1003",
+    "employee_id": "E2210",
+    "employee_grade": "Senior Analyst",
+    "trip_city": "Nagpur",
+    "city_tier": "non_metro",
+    "purpose": "Vendor audit - Nagpur",
+    "submitted_on": "2026-08-22",
+    "line_items": [
+      {"category": "flight", "vendor": "SpiceJet", "date": "2026-08-20", "amount": 6100, "receipt_attached": true, "receipt_id": "R-9201"},
+      {"category": "hotel", "vendor": "Local Business Hotel", "date": "2026-08-20", "amount": 4300, "nights": 1, "receipt_attached": false, "receipt_id": null},
+      {"category": "meals", "vendor": "Various", "date": "2026-08-20", "amount": 900, "receipt_attached": true, "receipt_id": "R-9203"}
+    ]
+  },
+  {
+    "claim_id": "CLM-1004",
+    "employee_id": "E4521",
+    "employee_grade": "Manager",
+    "trip_city": "Bengaluru",
+    "city_tier": "metro",
+    "purpose": "Client workshop - Bengaluru (dup)",
+    "submitted_on": "2026-08-23",
+    "line_items": [
+      {"category": "flight", "vendor": "IndiGo", "date": "2026-08-18", "amount": 8200, "receipt_attached": true, "receipt_id": "R-9301"}
+    ]
+  },
+  {
+    "claim_id": "CLM-1005",
+    "employee_id": "E5590",
+    "employee_grade": "Director",
+    "trip_city": "Mumbai",
+    "city_tier": "metro",
+    "purpose": "Emergency client escalation - Mumbai",
+    "submitted_on": "2026-08-24",
+    "line_items": [
+      {"category": "flight", "vendor": "Vistara", "date": "2026-08-23", "amount": 42000, "receipt_attached": true, "receipt_id": "R-9401", "notes": "Business class - emergency same-day travel, justification attached"},
+      {"category": "hotel", "vendor": "Trident", "date": "2026-08-23", "amount": 9500, "nights": 1, "receipt_attached": true, "receipt_id": "R-9402"},
+      {"category": "meals", "vendor": "Various", "date": "2026-08-23", "amount": 1800, "receipt_attached": true, "receipt_id": "R-9403"}
+    ],
+    "exception_claimed": true,
+    "exception_justification": "Same-day client escalation mandated by VP Sales; no economy availability within required window."
+  },
+  {
+    "claim_id": "CLM-1006",
+    "employee_id": "E3390",
+    "employee_grade": "Associate",
+    "trip_city": "Chennai",
+    "city_tier": "metro",
+    "purpose": "Internal review meeting - Chennai",
+    "submitted_on": "2026-08-25",
+    "line_items": [
+      {"category": "flight", "vendor": "IndiGo", "date": "2026-08-24", "amount": 5200, "receipt_attached": true, "receipt_id": "R-9501"},
+      {"category": "taxi", "vendor": "Ola", "date": "2026-08-24", "amount": 480, "receipt_attached": true, "receipt_id": "R-9502"},
+      {"category": "meals", "vendor": "Various", "date": "2026-08-24", "amount": 900, "receipt_attached": true, "receipt_id": "R-9503"}
+    ]
+  }
+]

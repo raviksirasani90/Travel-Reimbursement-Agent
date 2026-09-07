@@ -1,0 +1,250 @@
+[
+  {
+    "decision_id": "09fd888a-1207-4fbb-84eb-a272a95e5c45",
+    "claim_id": "CLM-1001",
+    "employee_id": "E4521",
+    "decision": "Manual Review",
+    "requested_amount": 16850,
+    "approved_amount": 16850,
+    "rejected_amount": 0,
+    "confidence": 1.0,
+    "flags": [
+      "above_auto_approval_threshold"
+    ],
+    "policy_references": [
+      "POL-APPROVAL-01",
+      "POL-FLIGHT-01",
+      "POL-HOTEL-01",
+      "POL-MEALS-01"
+    ],
+    "line_item_breakdown": [
+      {
+        "category": "flight",
+        "requested": 8200,
+        "cap": 15000,
+        "approvable": 8200,
+        "receipt_valid": true,
+        "over_cap_pct": 0
+      },
+      {
+        "category": "hotel",
+        "requested": 6800,
+        "cap": 7000,
+        "approvable": 6800,
+        "receipt_valid": true,
+        "over_cap_pct": 0
+      },
+      {
+        "category": "meals",
+        "requested": 1200,
+        "cap": 1500,
+        "approvable": 1200,
+        "receipt_valid": true,
+        "over_cap_pct": 0
+      },
+      {
+        "category": "taxi",
+        "requested": 650,
+        "cap": 999999,
+        "approvable": 650,
+        "receipt_valid": true,
+        "over_cap_pct": 0
+      }
+    ],
+    "required_approver": "Manager",
+    "rationale": "",
+    "generated_at": "2026-09-07T04:19:20.690551+00:00"
+  },
+  {
+    "decision_id": "417469d4-d29f-4733-89c4-b5a96abbc9a4",
+    "claim_id": "CLM-1002",
+    "employee_id": "E7734",
+    "decision": "Partially Approve",
+    "requested_amount": 23100,
+    "approved_amount": 20600,
+    "rejected_amount": 2500,
+    "confidence": 1.0,
+    "flags": [],
+    "policy_references": [
+      "POL-APPROVAL-01",
+      "POL-FLIGHT-01",
+      "POL-HOTEL-01",
+      "POL-MEALS-01"
+    ],
+    "line_item_breakdown": [
+      {
+        "category": "flight",
+        "requested": 17500,
+        "cap": 15000,
+        "approvable": 15000,
+        "receipt_valid": true,
+        "over_cap_pct": 16.7
+      },
+      {
+        "category": "hotel",
+        "requested": 4200,
+        "cap": 7000,
+        "approvable": 4200,
+        "receipt_valid": true,
+        "over_cap_pct": 0
+      },
+      {
+        "category": "meals",
+        "requested": 1400,
+        "cap": 1500,
+        "approvable": 1400,
+        "receipt_valid": true,
+        "over_cap_pct": 0
+      }
+    ],
+    "required_approver": "Manager",
+    "rationale": "Some line items exceed policy caps or failed receipt validation; the compliant portion is approved and the remainder is disallowed.",
+    "generated_at": "2026-09-07T04:19:20.692872+00:00"
+  },
+  {
+    "decision_id": "a978a583-a66b-4840-bbaa-b527c95d6c6f",
+    "claim_id": "CLM-1003",
+    "employee_id": "E2210",
+    "decision": "Manual Review",
+    "requested_amount": 11300,
+    "approved_amount": 7000,
+    "rejected_amount": 4300,
+    "confidence": 0.6,
+    "flags": [
+      "hotel:missing_receipt"
+    ],
+    "policy_references": [
+      "POL-APPROVAL-01",
+      "POL-FLIGHT-01",
+      "POL-HOTEL-01",
+      "POL-MEALS-01"
+    ],
+    "line_item_breakdown": [
+      {
+        "category": "flight",
+        "requested": 6100,
+        "cap": 15000,
+        "approvable": 6100,
+        "receipt_valid": true,
+        "over_cap_pct": 0
+      },
+      {
+        "category": "hotel",
+        "requested": 4300,
+        "cap": 5000,
+        "approvable": 0,
+        "receipt_valid": false,
+        "over_cap_pct": 0
+      },
+      {
+        "category": "meals",
+        "requested": 900,
+        "cap": 1500,
+        "approvable": 900,
+        "receipt_valid": true,
+        "over_cap_pct": 0
+      }
+    ],
+    "required_approver": "System (Auto)",
+    "rationale": "One or more line items lack a mandatory receipt (POL-RECEIPT-01), which blocks auto-approval for those items.",
+    "generated_at": "2026-09-07T04:19:20.694402+00:00"
+  },
+  {
+    "decision_id": "eeca37dc-340c-4867-aa05-9f62565eed86",
+    "claim_id": "CLM-1004",
+    "employee_id": "E4521",
+    "decision": "Manual Review",
+    "requested_amount": 8200,
+    "approved_amount": 8200,
+    "rejected_amount": 0,
+    "confidence": 0.7,
+    "flags": [
+      "duplicate_of:CLM-1001"
+    ],
+    "policy_references": [
+      "POL-APPROVAL-01",
+      "POL-FLIGHT-01",
+      "POL-DUPLICATE-01"
+    ],
+    "line_item_breakdown": [
+      {
+        "category": "flight",
+        "requested": 8200,
+        "cap": 15000,
+        "approvable": 8200,
+        "receipt_valid": true,
+        "over_cap_pct": 0
+      }
+    ],
+    "required_approver": "System (Auto)",
+    "rationale": "A line item matches a previously reimbursed claim on vendor, amount, and date (POL-DUPLICATE-01) and requires Finance investigation.",
+    "generated_at": "2026-09-07T04:19:20.695566+00:00"
+  },
+  {
+    "decision_id": "287a3e36-63c8-4294-8f8e-fb13c661b935",
+    "claim_id": "CLM-1005",
+    "employee_id": "E5590",
+    "decision": "Manual Review",
+    "requested_amount": 53300,
+    "approved_amount": 0,
+    "rejected_amount": 53300,
+    "confidence": 1.0,
+    "flags": [
+      "exception_claimed"
+    ],
+    "policy_references": [
+      "POL-EXCEPTION-01",
+      "POL-RECEIPT-01"
+    ],
+    "line_item_breakdown": [],
+    "required_approver": "N/A",
+    "rationale": "Claim invokes a policy exception. Per POL-EXCEPTION-01, exception claims always require Manual Review with the written justification reviewed by Finance, regardless of amount.",
+    "generated_at": "2026-09-07T04:19:20.696494+00:00"
+  },
+  {
+    "decision_id": "9137e9ab-6f9b-468b-8ff0-478459f1cd7e",
+    "claim_id": "CLM-1006",
+    "employee_id": "E3390",
+    "decision": "Approve",
+    "requested_amount": 6580,
+    "approved_amount": 6580,
+    "rejected_amount": 0,
+    "confidence": 1.0,
+    "flags": [],
+    "policy_references": [
+      "POL-APPROVAL-01",
+      "POL-FLIGHT-01",
+      "POL-HOTEL-01",
+      "POL-MEALS-01"
+    ],
+    "line_item_breakdown": [
+      {
+        "category": "flight",
+        "requested": 5200,
+        "cap": 15000,
+        "approvable": 5200,
+        "receipt_valid": true,
+        "over_cap_pct": 0
+      },
+      {
+        "category": "taxi",
+        "requested": 480,
+        "cap": 999999,
+        "approvable": 480,
+        "receipt_valid": true,
+        "over_cap_pct": 0
+      },
+      {
+        "category": "meals",
+        "requested": 900,
+        "cap": 1500,
+        "approvable": 900,
+        "receipt_valid": true,
+        "over_cap_pct": 0
+      }
+    ],
+    "required_approver": "System (Auto)",
+    "rationale": "All line items are within category caps, receipts are valid, no duplicates detected, and the total is within the auto-approval threshold (POL-APPROVAL-01).",
+    "generated_at": "2026-09-07T04:19:20.697808+00:00"
+  }
+]

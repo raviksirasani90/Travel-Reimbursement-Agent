@@ -1,0 +1,45 @@
+
+===== Claim CLM-1001 =====
+[intake] claim_id=CLM-1001 employee=E4521 requested_total=16850
+[receipt] flight (R-9001) -> valid, cap=15000, amount=8200, over_cap_pct=0%
+[receipt] hotel (R-9002) -> valid, cap=7000, amount=6800, over_cap_pct=0%
+[receipt] meals (R-9003) -> valid, cap=1500, amount=1200, over_cap_pct=0%
+[receipt] taxi (R-9004) -> valid, cap=999999, amount=650, over_cap_pct=0%
+[approval_matrix] approved_total=16850 -> approver=Manager, auto_approvable=False
+[decision] Manual Review | approved=16850/16850 | confidence=1.00 | flags=['above_auto_approval_threshold']
+
+===== Claim CLM-1002 =====
+[intake] claim_id=CLM-1002 employee=E7734 requested_total=23100
+[receipt] flight (R-9101) -> valid, cap=15000, amount=17500, over_cap_pct=17%
+[receipt] hotel (R-9102) -> valid, cap=7000, amount=4200, over_cap_pct=0%
+[receipt] meals (R-9103) -> valid, cap=1500, amount=1400, over_cap_pct=0%
+[approval_matrix] approved_total=20600 -> approver=Manager, auto_approvable=False
+[decision] Partially Approve | approved=20600/23100 | confidence=1.00 | flags=none
+
+===== Claim CLM-1003 =====
+[intake] claim_id=CLM-1003 employee=E2210 requested_total=11300
+[receipt] flight (R-9201) -> valid, cap=15000, amount=6100, over_cap_pct=0%
+[receipt] hotel (None) -> INVALID (missing_receipt)
+[receipt] meals (R-9203) -> valid, cap=1500, amount=900, over_cap_pct=0%
+[approval_matrix] approved_total=7000 -> approver=System (Auto), auto_approvable=True
+[decision] Manual Review | approved=7000/11300 | confidence=0.60 | flags=['hotel:missing_receipt']
+
+===== Claim CLM-1004 =====
+[intake] claim_id=CLM-1004 employee=E4521 requested_total=8200
+[receipt] flight (R-9301) -> valid, cap=15000, amount=8200, over_cap_pct=0%
+[duplicate] flight matches prior claim CLM-1001 -> flagged
+[approval_matrix] approved_total=8200 -> approver=System (Auto), auto_approvable=True
+[decision] Manual Review | approved=8200/8200 | confidence=0.70 | flags=['duplicate_of:CLM-1001']
+
+===== Claim CLM-1005 =====
+[intake] claim_id=CLM-1005 employee=E5590 requested_total=53300
+[rule] exception_claimed=True -> forced Manual Review (POL-EXCEPTION-01)
+[decision] Manual Review | approved=0/53300 | confidence=1.00 | flags=['exception_claimed']
+
+===== Claim CLM-1006 =====
+[intake] claim_id=CLM-1006 employee=E3390 requested_total=6580
+[receipt] flight (R-9501) -> valid, cap=15000, amount=5200, over_cap_pct=0%
+[receipt] taxi (R-9502) -> valid, cap=999999, amount=480, over_cap_pct=0%
+[receipt] meals (R-9503) -> valid, cap=1500, amount=900, over_cap_pct=0%
+[approval_matrix] approved_total=6580 -> approver=System (Auto), auto_approvable=True
+[decision] Approve | approved=6580/6580 | confidence=1.00 | flags=none

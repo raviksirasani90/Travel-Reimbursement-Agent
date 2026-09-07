@@ -1,0 +1,42 @@
+[
+  {
+    "id": "POL-FLIGHT-01",
+    "section": "3.1 Air Travel",
+    "text": "Domestic flights must be booked in Economy class. Business class is permitted only for flights exceeding 6 hours or for employees at Director level and above, with pre-trip approval. Maximum reimbursable domestic economy fare is INR 15,000 per sector unless pre-approved otherwise."
+  },
+  {
+    "id": "POL-HOTEL-01",
+    "section": "3.2 Lodging",
+    "text": "Hotel stays for domestic travel are capped at INR 7,000 per night in Metro cities (Mumbai, Delhi, Bengaluru, Chennai, Hyderabad, Pune, Kolkata) and INR 5,000 per night in non-metro cities. Itemized hotel folio is mandatory; personal expenses (minibar, laundry, movies) billed to the room are not reimbursable."
+  },
+  {
+    "id": "POL-MEALS-01",
+    "section": "3.3 Meals & Per Diem",
+    "text": "Meal reimbursement for domestic travel is capped at INR 1,500 per day, claimable either as itemized receipts or a flat per-diem, not both. Alcohol is not reimbursable under any circumstance."
+  },
+  {
+    "id": "POL-TAXI-01",
+    "section": "3.4 Local Transport",
+    "text": "Local taxi and ride-hailing expenses for airport transfers and client site visits are reimbursable at actuals with receipts. Personal sightseeing or non-business travel is excluded."
+  },
+  {
+    "id": "POL-RECEIPT-01",
+    "section": "4.1 Receipt & Documentation Requirements",
+    "text": "All claims above INR 500 per line item require an original itemized receipt or digital invoice showing vendor name, date, amount, and GST/tax breakup where applicable. Claims lacking mandatory receipts must be routed to Manual Review and cannot be auto-approved."
+  },
+  {
+    "id": "POL-APPROVAL-01",
+    "section": "5.1 Approval Thresholds",
+    "text": "Claims up to INR 10,000 in total may be auto-approved by the system if fully policy-compliant. Claims between INR 10,001 and INR 50,000 require Manager approval. Claims above INR 50,000 require Finance Controller approval regardless of policy compliance. Any single line item exceeding its category cap by more than 20% must be routed to Manual Review even if the total is within threshold."
+  },
+  {
+    "id": "POL-DUPLICATE-01",
+    "section": "5.2 Duplicate & Fraud Controls",
+    "text": "Claims with the same vendor, amount, and travel date as a previously reimbursed claim by the same employee, or with amounts split across multiple claims to stay under approval thresholds, are flagged for Manual Review and Finance investigation."
+  },
+  {
+    "id": "POL-EXCEPTION-01",
+    "section": "6.1 Exceptions",
+    "text": "Any claim citing an exception to standard caps (e.g., emergency travel, client mandate) must include a written justification and is never eligible for auto-approval; it is always routed to Manual Review with the justification attached as evidence."
+  }
+]
