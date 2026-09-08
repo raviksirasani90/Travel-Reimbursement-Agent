@@ -83,8 +83,4 @@ of confidence score:
   claims, not just the exact-match duplicate check implemented here.
 - No multi-currency, multi-entity, or international travel support in this scope.
 
-See §11 of the architecture note for the full risk/governance discussion.
 
-## License
-
-MIT — see `LICENSE`.
